@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /*font-size: 0; hack */ 
+}
+
+.one, .two {
+  display: inline-block;
+  vertical-align: top;
+  /*padding: 5px;*/
+  padding: 0 10px;
+  /*font-size: 16px;  */
+}
+
+.one {
+  width: 50%;
+  /*border: 1px solid red;*/
+}
+
+.two {
+  width: 49%;
+  /*border: 1px solid purple;*/
+}

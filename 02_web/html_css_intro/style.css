@@ -1,0 +1,36 @@
+/*
+
+selector {
+  someProperty: some value;
+  someOtherProp: some other value;
+}
+
+*/
+
+body {
+  background-color: mistyrose;
+}
+
+/* select multiple at once */
+h1, h2 {
+  text-decoration: underline;
+}
+
+.warning {
+  color: yellow;
+}
+
+#desire {
+  font-style: italic;
+}
+
+/* descendant */
+article p {
+  font-size: 50px;
+}
+
+/* direct child */
+article > h2 {
+  color: salmon;
+}
+
