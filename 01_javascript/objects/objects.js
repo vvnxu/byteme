@@ -31,3 +31,6 @@ var wdi14 = {
   studentsCount: 23,
   date: new Date()
 }
+
+console.log(wdi14.name);
+console.log(wdi14['name']);
