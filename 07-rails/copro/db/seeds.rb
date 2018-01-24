@@ -6,6 +6,7 @@ arr2 = ['pudding', 'muffin', 'floss', 'crush']
 
 user = User.new
 user.email = 'dt@ga.co'
+user.password = 'pudding'
 user.save
 
 10.times do 
