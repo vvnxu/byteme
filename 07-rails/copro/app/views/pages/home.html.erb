@@ -1,7 +1,7 @@
 <div class="container">
   <% @projects.each do |project| %>
   <div class="project">
-    <a href="">
+    <a href="/projects/<%= project.id %>">
       <img src="<%= project.preview.url %>" alt="">
     </a>
   </div>

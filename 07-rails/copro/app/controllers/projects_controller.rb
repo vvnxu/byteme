@@ -3,6 +3,11 @@ class ProjectsController < ApplicationController
   def new
   end
 
+  def show
+    @project = Project.find(params[:id])
+    @comments = @project.comments
+  end
+
   def create
     redirect_to '/login' unless session[:user_id]
 
