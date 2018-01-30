@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dom element creation</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+</head>
+<body>
+  <input type="text"><button>add</button>
+  <div class="container">
+  </div>
+  <script>
+    console.log('ready to go');
+
+    var languages = ['ruby', 'javascript', 'golang'];
+    var container = document.querySelector('.container');
+    var addBtn = document.querySelector('button');
+
+    var createParagraph = function(text) {
+      var newPara = document.createElement('p');
+      newPara.textContent = text;
+      return newPara;
+    }
+    
+    languages.forEach(function(lang) {
+      // var newPara = document.createElement('p');
+      // newPara.textContent = lang;
+      container.appendChild(createParagraph(lang));
+    });
+
+
+    addBtn.addEventListener('click', function() {
+      // get input value
+      var inputValue = document.querySelector('input').value;
+      // create new paragraph element with input value
+      // var newLang = document.createElement('p');
+      // newLang.textContent = inputValue;
+      // append newly created element back to the dom tree
+      container.appendChild(createParagraph(inputValue));
+      document.querySelector('input').value = '';
+    });
+
+    var allParas = document.querySelectorAll('p');
+
+    allParas.forEach(function(para) {
+      para.addEventListener('click', function(event) {
+          event.target.remove();
+      });
+    });
+
+    // firstPara.addEventListener('click', function(event) {
+    //   console.log('bam');
+    // });
+
+  </script>
+</body>
+</html>
