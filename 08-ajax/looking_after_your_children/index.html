@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .container {
+      padding: 20px;
+    }
+
+    p {
+      background-color: lavenderblush; 
+    }
+  </style>
+</head>
+<body>
+  <input type="text"><button>add</button>
+  <div class="container">
+    <p class="kid">alex</p>
+    <p class="kid">fouad</p>
+    <p class="kid">robbie</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    // var container = document.querySelector('.container');
+    var $container = $('.container'); // returns jquery object
+
+    $container.on('click', 'p', function(e) {
+      e.target.remove();
+    });
+
+    $('button').on('click', function() {
+      var newChildName = $('input').val();
+      var $newChild = $('<p>').text(newChildName);
+      $container.append( $newChild );
+    });
+
+    // container.addEventListener('click', function(e) {
+    //   if (e.target.tagName === 'P') { // tagNames are in caps
+    //     e.target.remove();
+    //   }
+    // });
+    // var addBtn = document.querySelector('button');
+
+
+    // addBtn.addEventListener('click', function() {
+    //   var newChildName = document.querySelector('input').value;
+    //   var newChild = document.createElement('p');
+    //   newChild.textContent = newChildName;
+    //   container.appendChild(newChild);  
+    // })
+  </script>
+</body>
+</html>
