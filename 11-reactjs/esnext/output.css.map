@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IAAK;EACH,gBAAgB,EAHP,SAAS;;AAMpB,IAAK;EACH,gBAAgB,EAPP,SAAS",
+"sources": ["fancy.scss"],
+"names": [],
+"file": "output.css"
+}
