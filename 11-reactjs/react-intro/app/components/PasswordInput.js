@@ -2,7 +2,7 @@ import React from 'react'
 import passwordMeter from '../../lib/passwordMeter'
 import './PasswordInput.scss'
 
-export default class PasswordInput extends React.Component {
+class PasswordInput extends React.Component {
 
   constructor(props) {
     super(props)
@@ -26,3 +26,5 @@ export default class PasswordInput extends React.Component {
   }
 
 }
+
+module.exports = PasswordInput

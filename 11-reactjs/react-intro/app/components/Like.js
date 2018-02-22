@@ -4,11 +4,6 @@ import React from 'react'
 
 export default function Like(props) {
   return (
-    <div>Like 
-      <span>{props.count}</span>
-      <span>hates {props.hate}</span>
-    </div>
+    <div>Like <span>{props.count}</span></div>
   )
 }
-
-// module.exports = Like // export default

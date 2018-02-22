@@ -1,5 +1,5 @@
 var expect = require('chai').expect
-import getStrength from '../lib/passwordMeter'
+var getStrength = require('../lib/passwordMeter')
 
 describe('passwordMeter', () => {
   it('should return weak by default', () => {
